@@ -1,0 +1,11 @@
+.ticket {
+    border: 1px solid black;
+    border-radius: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #ffd700;
+    color: #8b4513;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+}

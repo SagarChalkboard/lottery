@@ -1,0 +1,19 @@
+.Ticket {
+    border: 1px solid pink;
+    border-radius: 20px;
+    background-color: #f7e8d5; /* Vintage beige color */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    font-family: "Courier New", monospace; /* Vintage typewriter font */
+    font-size: 18px; /* Slightly larger font size */
+    color: #4d4d4d; /* Dark gray text color */
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.Ticket:hover {
+    transform: scale(1.1);
+    background-color: #e6b3a1; /* Vintage pink color */
+    color: white;
+}
