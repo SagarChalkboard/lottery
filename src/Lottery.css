@@ -1,11 +1,52 @@
+.vintage-lottery {
+    font-family: "Old English Text MT", serif;
+}
+
+
+
 .ticket {
-    border: 1px solid black;
-    border-radius: 14px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    background-color: #ffd700;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f5f5dc;
     color: #8b4513;
     font-family: "Courier New", monospace;
-    font-size: 16px;
-    padding: 10px;
+    font-size: 18px;
+    padding: 20px;
     text-align: center;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    transition: all 0.3s ease;
+}
+
+.ticket:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #ffe4c4;
+    color: #a0522d;
+}
+
+.ticket::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #8b4513;
+    border-radius: 12px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.ticket::after {
+    content: "Lottery Ticket";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
